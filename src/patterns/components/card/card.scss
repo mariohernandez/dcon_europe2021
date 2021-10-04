@@ -21,24 +21,20 @@
   }
 
   &::after {
-    position: absolute;
-    content: '';
-    display: block;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    width: 0;
-    height: 0;
     border-bottom: 2rem solid $color-white;
     border-right: 39rem solid transparent; // 390px
+    bottom: 0;
+    content: '';
+    display: block;
+    height: 0;
+    left: 0;
+    position: absolute;
+    right: 0;
+    width: 0;
   }
 }
 
 .card__date {
   margin-bottom: 1.4rem;
   margin-top: 0;
-}
-
-.card__body {
-  line-height: 1.5;
 }
