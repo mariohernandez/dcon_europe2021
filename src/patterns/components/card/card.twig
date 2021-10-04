@@ -1,0 +1,41 @@
+{{ attach_library('components_theme/card') }}
+
+<article class="card{{- modifier ? ' ' ~ modifier -}}
+  {{- attributes ? ' ' ~ attributes.class -}}"
+  {{- attributes ? ' ' ~ attributes|without(class) -}}>
+  {% if image %}
+    <div class="card__image">
+      {{ image }}
+    </div>
+  {% endif %}
+
+  <div class="card__content">
+    {% if date %}
+      {%
+        include '@components_theme/eyebrow/eyebrow.twig' with {
+          "modifier": 'card__date',
+          "text": date,
+        } only
+      %}
+    {% endif %}
+
+    {% if heading %}
+      {{ title_prefix }}
+      {% include '@components_theme/heading/heading.twig' %}
+      {{ title_suffix }}
+    {% endif %}
+
+    {% if body %}
+      <p class="card__body">
+        {{ body }}
+      </p>
+    {% endif %}
+
+    {% if button %}
+      {% include '@components_theme/button/button.twig' with {
+          "button": button,
+        } only
+      %}
+    {% endif %}
+  </div>
+</article>

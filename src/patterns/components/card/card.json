@@ -1,0 +1,17 @@
+{
+  "image": "<img src='https://source.unsplash.com/6VhPY27jdps/640x360' alt='Cups of coffee' />",
+  "date": "October 4, 2021",
+  "heading": {
+    "heading_level": 2,
+    "modifier": "card__title",
+    "title": "Hello and welcome to DrupalCon Europe 2021",
+    "url": "#"
+  },
+  "body": "Curabitur blandit tempus porttitor. Vestibulum id ligula porta felis euismod semper. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.",
+  "button": {
+    "text": "Read the full article",
+    "url": "#",
+    "modifier": "button--link"
+  },
+  "modifier": ""
+}

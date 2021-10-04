@@ -1,0 +1,44 @@
+@import '../../global/utils/init';
+
+.card {
+  border-radius: 10px;
+  box-shadow: 0 1px 1px hsl(0deg 0% 0% / 8%), 0 2px 2px hsl(0deg 0% 0% / 8%), 0 4px 4px hsl(0deg 0% 0% / 8%), 0 8px 8px hsl(0deg 0% 0% / 8%), 0 16px 16px hsl(0deg 0% 0% / 8%);
+  max-width: 36rem; // 360px
+}
+
+.card__content {
+  padding: 1rem 2rem 2rem; // 20px
+}
+
+.card__image {
+  overflow: hidden;
+  position: relative;
+
+  img {
+    border-radius: 10px 10px 0 0;
+    display: block;
+    max-width: 100%;
+  }
+
+  &::after {
+    position: absolute;
+    content: '';
+    display: block;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 0;
+    height: 0;
+    border-bottom: 2rem solid $color-white;
+    border-right: 39rem solid transparent; // 390px
+  }
+}
+
+.card__date {
+  margin-bottom: 1.4rem;
+  margin-top: 0;
+}
+
+.card__body {
+  line-height: 1.5;
+}
