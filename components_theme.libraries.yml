@@ -34,6 +34,11 @@ button:
     component:
       dist/css/button.css: {}
 
+card:
+  css:
+    component:
+      dist/css/card.css: {}
+
 eyebrow:
   css:
     component:

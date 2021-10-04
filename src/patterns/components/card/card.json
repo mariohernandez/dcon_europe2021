@@ -8,7 +8,7 @@
     "url": "#"
   },
   "body": "Curabitur blandit tempus porttitor. Vestibulum id ligula porta felis euismod semper. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.",
-  "button": {
+  "cta": {
     "text": "Read the full article",
     "url": "#",
     "modifier": "button--link"
